@@ -1,0 +1,53 @@
+{
+  "MiniTest": {
+    "coverage": {
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/helpers/pages_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/controllers/pages_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/models/application_record.rb": [
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1511881523
+  }
+}
