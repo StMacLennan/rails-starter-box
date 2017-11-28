@@ -24,10 +24,19 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'capybara', '~> 2.13'
+group :test do
+  gem 'minitest-rails', '~> 3.0'
+  gem 'minitest-reporters', '~> 1.1.14'
+  gem 'minitest-rails-capybara', '~> 3.0.1'
+  #gem 'faker'
+  gem 'capybara', '~> 2.16.1'
+  #gem 'pundit-matchers'
   gem 'selenium-webdriver'
+  gem 'simplecov', :require => false
+end
+
+group :development, :test do
+  gem 'pry'
 end
 
 group :development do
