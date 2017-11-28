@@ -1,13 +1,10 @@
-# Update this data with yourown. Change username, password, and database names to reflect your app name
-# Rename this file database.yml
-
 default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: localhost
   port: 5432
-  username: YOURUSERNAME
+  username: stephenmaclennan
   password:
 
 development:

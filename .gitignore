@@ -20,3 +20,7 @@
 /public/packs
 /public/packs-test
 /node_modules
+
+# Exclude secrets and database data from git
+/config/secrets.yml
+/config/database.yml

@@ -1,6 +1,19 @@
 {
   "MiniTest": {
     "coverage": {
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/helpers/application_helper.rb": [
         1,
         null
@@ -48,21 +61,8 @@
         0,
         0,
         0
-      ],
-      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/models/application_record.rb": [
-        0,
-        0,
-        0
-      ],
-      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/models/user.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1511887445
+    "timestamp": 1511888103
   }
 }
