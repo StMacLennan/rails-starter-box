@@ -17,12 +17,14 @@ This is a template that I use to create new rails projects to take away some of 
 
 ## Testing
 A few notes on the testing environment
-- I prefer Minitest over RSpec.
-- I also favour fixtures for testing consistency.
-
+- I prefer Minitest over RSpec
+- I also favour fixtures for testing consistency
+- I have included a Pages controller, with a controller test as default
+- I have also included a nonsense User system test to ensure that system tests work
 
 ## Using this Starter Box
 To get started, just follow these steps:
 - Clone this repo with 'git clone https://github.com/StMacLennan/rails-starter-box.git'
 - Update the config/database.yml.example for your own database details, and rename to config/database.yml
 - Update the config/secrets.yml.example with your own secrets, and rename to config/secrets.yml
+- Run your tests as normal with `rails test`. And view the coverage, buy opeing the coverage/index.html file in your browser
