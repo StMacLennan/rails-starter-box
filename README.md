@@ -1,24 +1,21 @@
-# README
+# Rails Starter Box
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a template that I use to create new rails projects to take away some of the admin! Feel free to use it :)
 
-Things you may want to cover:
+## What's included
+- **Ruby version**: Ruby 2.4.2
+- **Framework**: Rails 5.1.4
+- **Database**: Postgres
+- **Webserver**: Puma
+- **Testing**: Minitest, SimpleCov, Selenium, Capybara (For test coverage)
+- **Debugging**: Pry
+- **Authentication**: Devise
+- **Authorization**: Pundit
+- **Front-end**: Webpack is installed, but a framework is not included yet for flexibility
+- **Javascript**: Includes JQuery, excludes coffeescript in favor of plain Javascript
+- **SCSS**: SCSS is setup with predefined files for application.scss, defaults.scss, and variables.scss
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Testing
+A few notes on the testing environment
+- I prefer Minitest over RSpec.
+- I also favour fixtures for testing consistency.
