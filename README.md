@@ -25,6 +25,9 @@ A few notes on the testing environment
 ## Using this Starter Box
 To get started, just follow these steps:
 - Clone this repo with 'git clone https://github.com/StMacLennan/rails-starter-box.git'
+- Remove the existing .git with `rm -R .git/`
+- Initialize git with `git init`
+- Follow your normal steps to deposit this into your own repo
 - Update the config/database.yml.example for your own database details, and rename to config/database.yml
 - Update the config/secrets.yml.example with your own secrets, and rename to config/secrets.yml
 - Run your tests as normal with `rails test`. And view the coverage, buy opeing the coverage/index.html file in your browser
