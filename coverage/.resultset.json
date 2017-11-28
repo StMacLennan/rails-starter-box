@@ -18,6 +18,13 @@
       "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/controllers/application_controller.rb": [
         1,
         1,
+        null,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/channels/application_cable/channel.rb": [
@@ -46,8 +53,16 @@
         0,
         0,
         0
+      ],
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/models/user.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ]
     },
-    "timestamp": 1511881523
+    "timestamp": 1511887445
   }
 }
