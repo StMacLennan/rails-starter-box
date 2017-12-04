@@ -3,20 +3,23 @@
 
 default: &default
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: localhost
+  host: postgres
   port: 5432
-  username: YOURUSERNAME
-  password:
+
 
 development:
   <<: *default
-  database: rails-starter-box_development
+  database: <%= ENV['POSTGRES_DATABASE'] %>
+  username: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
 
 test:
   <<: *default
-  database: rails-starter-box_test
+  database: app-test-db
+  username: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -39,6 +42,6 @@ test:
 #
 production:
   <<: *default
-  database: rails-starter-box_production
-  username: rails-starter-box
-  password: <%= ENV['RAILS-STARTER-BOX_DATABASE_PASSWORD'] %>
+  database: <%= ENV['PG_PRODUCTION_DATABASE'] %>
+  username: <%= ENV['PG_PRODUCTION_DATABASE_USERNAME'] %>
+  password: <%= ENV['PG_PRODUCTION_DATABASE_PASSWORD'] %>
