@@ -86,6 +86,9 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  # Where GTM-XXXX is your container ID from Google Tag Manager
+  GoogleTagManager.gtm_id = "GTM-XXXX"
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end

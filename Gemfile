@@ -22,6 +22,7 @@ gem 'pundit', '~> 1.1.0', '>= 1.1.0'
 gem 'bulma-rails', '~> 0.6.1'
 gem 'font-awesome-rails'
 gem 'meta-tags'
+gem 'google-tag-manager-rails'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

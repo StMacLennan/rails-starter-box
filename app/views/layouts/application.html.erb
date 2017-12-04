@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <%= google_tag_manager %>
     <%= render 'shared/header' %>
     <% flash.each do |alert, message| %>
       <div class="<%= alert %>"><%= message %></div>
