@@ -1,3 +1,4 @@
+# This image is super fat, and should only be used for dev and testing
 FROM ruby:2.4.2
 
 # for nokogiri
@@ -5,7 +6,7 @@ RUN apt-get install -y libxml2-dev libxslt1-dev
 
 # for a JS runtime
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get install -y nodejs chromedriver chromium
 
 # for yarn
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
@@ -20,8 +21,6 @@ ADD Gemfile /app/Gemfile
 ADD Gemfile.lock /app/Gemfile.lock
 
 RUN bundle install
-
-#LABEL maintainer="YOUR NAME <youremail@domain.com>"
 
 ADD . /app
 
