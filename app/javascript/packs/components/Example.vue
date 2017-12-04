@@ -11,5 +11,8 @@
 </script>
 
 <style>
+  .example {
+    font-style: italic;
 
+  }
 </style>
