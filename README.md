@@ -15,6 +15,7 @@ This is a template that I use to create new rails projects to take away some of 
 - **Javascript**: Excludes coffeescript in favor of plain Javascript
 - **SCSS and styling framework**: Bulma is used along with SCSS. While the styles do affect vue components, SCSS variables are not available to the vue components.
 - **Development Environment**: Docker and docker-compose
+- **SEO and analytics**: Build in support for quick SEO metadata and drop in compatability with google tag manager
 
 ## Testing
 A few notes on the testing environment
@@ -52,5 +53,9 @@ This starter box already has meta-tags implemented. To configure it for your nee
   - Change the `<%= display_meta_tags site: 'Rails Starter Box' %>` to whatever your site is called
 - For each page, copy and configure the title, description and keywords for the template found under `app/controllers/pages_controller.rb` for the home page
 - You can also read more about options etc here: `https://github.com/kpumuk/meta-tags`
+
+## Google Analytics and Tag Manager
+This box supports google analytics using google tag manager
+- Simply add your google tag manager container-id to `config/environments/production.rb` in the line `GoogleTagManager.gtm_id = "GTM-XXXX"`
 
 
