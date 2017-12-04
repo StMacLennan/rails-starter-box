@@ -1,5 +1,5 @@
 <template>
- <div>Hello from Vue Template component</div>
+  <div class="example">Hello from Vue Template component</div>
 </template>
 
 <script>
@@ -10,6 +10,9 @@
   }
 </script>
 
-<style>
+<style scoped>
+  .example {
+    color: $green;
+  }
 
 </style>
