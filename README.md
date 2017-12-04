@@ -13,8 +13,8 @@ This is a template that I use to create new rails projects to take away some of 
 - **Authorization**: Pundit
 - **Front-end**: Vue + Webpack + Turbolinks (setup to play nicely)
 - **Javascript**: Excludes coffeescript in favor of plain Javascript
-- **SCSS**: SCSS is setup with predefined files for application.scss, defaults.scss, and variables.scss
-- **Development Environmen**: Docker and docker-compose
+- **SCSS and styling framework**: Bulma is used along with SCSS. While the styles do affect vue components, SCSS variables are not available to the vue components.
+- **Development Environment**: Docker and docker-compose
 
 ## Testing
 A few notes on the testing environment
