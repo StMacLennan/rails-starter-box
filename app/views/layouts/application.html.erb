@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
   <head>
     <title>RailsStarterBox</title>
     <%= csrf_meta_tags %>
@@ -11,9 +11,11 @@
   </head>
 
   <body>
+    <%= render 'shared/header' %>
     <% flash.each do |alert, message| %>
       <div class="<%= alert %>"><%= message %></div>
     <% end %>
     <%= yield %>
+    <%= render 'shared/footer' %>
   </body>
 </html>
