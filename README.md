@@ -44,3 +44,13 @@ This repo uses Docker and docker compose for the development environment. Here a
 - **Running migrations, generators etc**: To use any rails commands, such as db:migrate, or a generator, simply prepend the command with :`docker-compose exec web` and then your command. Eg: `docker-compose exec web rails db:migrate`
 
 Note, all data will persist with the containers. So if you shut down the container, and then restart it, the data will still be there. If you wish to delete the database data, simply the `-v` flag when tearing down the containers. Eg:`docker-compose down -v`
+
+## SEO and meta data
+This starter box already has meta-tags implemented. To configure it for your needs, simply do the following:
+- Change the name of your app under `app/views/layouts/application.html.erb`
+  - Change the `<title>RailsStarterBox</title>` to whatever your site is called
+  - Change the `<%= display_meta_tags site: 'Rails Starter Box' %>` to whatever your site is called
+- For each page, copy and configure the title, description and keywords for the template found under `app/controllers/pages_controller.rb` for the home page
+- You can also read more about options etc here: `https://github.com/kpumuk/meta-tags`
+
+
