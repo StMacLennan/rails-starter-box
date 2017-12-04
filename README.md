@@ -30,4 +30,4 @@ To get started, just follow these steps:
 - Follow your normal steps to deposit this into your own repo
 - Update the config/database.yml.example for your own database details, and rename to config/database.yml
 - Update the config/secrets.yml.example with your own secrets, and rename to config/secrets.yml
-- Run your tests as normal with `rails test`. And view the coverage, buy opeing the coverage/index.html file in your browser
+- Run your tests as normal with `rails test`. And view the coverage, by opeing the coverage/index.html file in your browser
