@@ -26,6 +26,14 @@ services:
     env_file:
       - '.env'
 
+  webpacker:
+    build: .
+    command: bash -c "rm -rf /app/public/packs; /app/bin/webpack-dev-server"
+    volumes:
+      - .:/app
+    ports:
+      - "3035:3035"
+
   postgres:
     image: 'postgres:10.0'
     env_file:
