@@ -15,5 +15,11 @@
   },
   "devDependencies": {
     "webpack-dev-server": "^2.9.5"
-  }
+  },
+  "version": "1.0.0",
+  "description": "Rails starter box for quickly developing apps",
+  "main": "index.js",
+  "repository": "https://github.com/StMacLennan/rails-starter-box.git",
+  "author": "Stephen MacLennan <milesmaclennan@gmail.com>",
+  "license": "MIT"
 }
