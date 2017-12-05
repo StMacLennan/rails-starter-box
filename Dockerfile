@@ -6,7 +6,7 @@ RUN apt-get install -y libxml2-dev libxslt1-dev
 
 # for a JS runtime
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
-RUN apt-get install -y nodejs chromedriver chromium
+RUN apt-get install -y nodejs
 
 # for yarn
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -

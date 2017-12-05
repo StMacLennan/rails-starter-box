@@ -12,6 +12,10 @@
 version: '3'
 
 services:
+  chrome:
+    image: selenium/standalone-chrome-debug
+    volumes:
+      - /dev/shm:/dev/shm
   web:
     image: custom-ruby
     build: .
@@ -23,6 +27,8 @@ services:
       - '.:/app'
     links:
       - postgres
+    depends_on:
+      - chrome
     env_file:
       - '.env'
 
