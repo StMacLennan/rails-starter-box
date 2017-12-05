@@ -7,7 +7,7 @@ This is a template that I use to create new rails projects to take away some of 
 - **Framework**: Rails 5.1.4
 - **Database**: Postgres
 - **Webserver**: Puma
-- **Testing**: Minitest, SimpleCov, Selenium, Capybara (For test coverage)
+- **Testing**: Minitest, SimpleCov, Selenium, Capybara, SimpleCov (For test coverage)
 - **Debugging**: Pry
 - **Authentication**: Devise
 - **Authorization**: Pundit
@@ -26,12 +26,20 @@ A few notes on the testing environment
 
 ## Getting started
 To get started, just follow these steps:
-- Clone this repo with 'git clone https://github.com/StMacLennan/rails-starter-box.git'
-- Remove the existing .git with `rm -R .git/`
-- Initialize git with `git init`
-- Follow your normal steps to deposit this into your own repo
-- Update the config/database.yml.example for your own database details, and rename to config/database.yml
-- Update the config/secrets.yml.example with your own secrets, and rename to config/secrets.yml
+- **Clone**: Clone this repo with 'git clone https://github.com/StMacLennan/rails-starter-box.git'
+- **Remove git**: Remove the existing .git with `rm -R .git/`
+- **Initialize your git**:Initialize git with `git init` and push to your own repo as normal
+- **Setup database**: Rename `config/database.yml.example` to `config/database.yml` and update details in `.env`
+- **Setup secrets**: Rename `config/secrets.yml.example` to `config/secrets.yml` and update secret in `.env`
+- **Rename app**: Go through the app and replace all references to Rails Starter Box with your app name. Locations:
+  - `views/layouts/application.html.erb` the title and site name
+  - `config/application.rb` module name (Note the camel case)
+  - `config/cable.yml`
+  - `config/environments/production.rb`
+- **Initialize yarn**: node modules are not committed to git.
+  - Initialize yarn with `docker-compose exec web yarn init` and update details as required
+  - Install packages with `docker-compose exec web yarn install`
+- **Setup your database**: Create and initialize your database with `docker-compose exec web rails db:create db:migrate`
 - Run your tests as normal with `rails test`. And view the coverage, by opeing the coverage/index.html file in your browser
 
 ## Using Docker
@@ -52,7 +60,7 @@ This starter box already has meta-tags implemented. To configure it for your nee
   - Change the `<title>RailsStarterBox</title>` to whatever your site is called
   - Change the `<%= display_meta_tags site: 'Rails Starter Box' %>` to whatever your site is called
 - For each page, copy and configure the title, description and keywords for the template found under `app/controllers/pages_controller.rb` for the home page
-- You can also read more about options etc here: `https://github.com/kpumuk/meta-tags`
+- You can also read more about options etc (here)[https://github.com/kpumuk/meta-tags]
 
 ## Google Analytics and Tag Manager
 This box supports google analytics using google tag manager
