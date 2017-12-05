@@ -41,7 +41,6 @@ To get started, just follow these steps:
   - Initialize yarn with `docker-compose exec web yarn init` and update details as required
   - Install packages with `docker-compose exec web yarn install`
 - **Setup your database**: Create and initialize your database with `docker-compose exec web rails db:create db:migrate`
-- Run your tests as normal with `rails test`. And view the coverage, by opeing the coverage/index.html file in your browser
 
 ## Using Docker
 This repo uses Docker and docker compose for the development environment. Here are a list of basic commands to get started:
