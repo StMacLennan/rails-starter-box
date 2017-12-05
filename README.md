@@ -16,6 +16,7 @@ This is a template that I use to create new rails projects to take away some of 
 - **SCSS and styling framework**: Bulma is used along with SCSS. While the styles do affect vue components, SCSS variables are not available to the vue components.
 - **Development Environment**: Docker and docker-compose
 - **SEO and analytics**: Build in support for quick SEO metadata and drop in compatability with google tag manager
+- **Workers and PubSub**: Sidekiq and Redis
 
 ## Testing
 A few notes on the testing environment
@@ -66,4 +67,11 @@ This starter box already has meta-tags implemented. To configure it for your nee
 This box supports google analytics using google tag manager
 - Simply add your google tag manager container-id to `config/environments/production.rb` in the line `GoogleTagManager.gtm_id = "GTM-XXXX"`
 
-
+## Sidekiq, Redis and Actioncable
+Redis and sidekiq are already configured
+- To setup workers, follow (this guide)[https://github.com/mperham/sidekiq/wiki/Getting-Started]
+- To use actioncable:
+  - Uncomment out the redis details in the .env file
+  - Uncomment out the line `gem redis` in the Gemfile
+  - Rebuild the containers for the change in gem file
+  - Follow this guide on (Action Cable)[http://edgeguides.rubyonrails.org/action_cable_overview.html]
