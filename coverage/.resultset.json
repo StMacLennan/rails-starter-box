@@ -1,28 +1,15 @@
 {
   "MiniTest": {
     "coverage": {
-      "/app/app/models/user.rb": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/app/app/models/application_record.rb": [
-        1,
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/app/app/helpers/application_helper.rb": [
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/helpers/pages_helper.rb": [
         1,
         null
       ],
-      "/app/app/helpers/pages_helper.rb": [
-        1,
-        null
-      ],
-      "/app/app/controllers/pages_controller.rb": [
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/controllers/pages_controller.rb": [
         1,
         1,
         1,
@@ -31,7 +18,7 @@
         null,
         null
       ],
-      "/app/app/controllers/application_controller.rb": [
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/controllers/application_controller.rb": [
         1,
         1,
         null,
@@ -43,29 +30,42 @@
         null,
         null
       ],
-      "/app/app/channels/application_cable/channel.rb": [
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ],
-      "/app/app/channels/application_cable/connection.rb": [
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/app/app/jobs/application_job.rb": [
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/jobs/application_job.rb": [
         0,
         0
       ],
-      "/app/app/mailers/application_mailer.rb": [
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/app/app/policies/application_policy.rb": [
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/models/application_record.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/models/user.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/stephenmaclennan/Code/Projects/Templates/rails-starter-box/app/policies/application_policy.rb": [
         0,
         0,
         0,
@@ -121,6 +121,6 @@
         0
       ]
     },
-    "timestamp": 1512456200
+    "timestamp": 1516530700
   }
 }
