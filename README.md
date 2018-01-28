@@ -83,4 +83,5 @@ Redis and sidekiq are already configured
 ## Puma
 - Update the workers in `config/puma.rb` to match the number of cores on your production server
 
-
+## How to deploy on Digital Ocean
+A full guide on how to configure and deploy your app (using this template) on Digital ocean is coming soon!
