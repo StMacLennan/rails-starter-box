@@ -71,3 +71,10 @@ Redis and sidekiq are already configured
 
 ### /config/deploy/production.rb
 - Add Digital Ocean Server IP to the first option for the *server*
+
+## NGINX
+- Update the `config/nginx.conf` for the *deploy user name* and the *app folder name* in the 4 location paths
+- On the server, you will need to run the following two commands
+  - Remove default nginx config: `sudo rm /etc/nginx/sites-enabled/default`
+  - Syslink nginx config in app: `sudo ln -nfs "/home/{{ Your deploy user name }}/apps/{{ Your app folder name }}/current/config/nginx.conf" "/etc/nginx/sites-enabled/{{Your app folder name}}"`
+
