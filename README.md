@@ -16,6 +16,8 @@ This is a template that I use to create new rails projects to take away some of 
 - **SCSS and styling framework**: Bulma is used along with SCSS. While the styles do affect vue components, SCSS variables are not available to the vue components.
 - **SEO and analytics**: Build in support for quick SEO metadata and drop in compatability with google tag manager
 - **Workers and PubSub**: Sidekiq and Redis
+- **Deployment**: Capistrano
+- **Reverse Proxy**: Nginx
 
 ## Testing
 A few notes on the testing environment
@@ -77,4 +79,8 @@ Redis and sidekiq are already configured
 - On the server, you will need to run the following two commands
   - Remove default nginx config: `sudo rm /etc/nginx/sites-enabled/default`
   - Syslink nginx config in app: `sudo ln -nfs "/home/{{ Your deploy user name }}/apps/{{ Your app folder name }}/current/config/nginx.conf" "/etc/nginx/sites-enabled/{{Your app folder name}}"`
+
+## Puma
+- Update the workers in `config/puma.rb` to match the number of cores on your production server
+
 
