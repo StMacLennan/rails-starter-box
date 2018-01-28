@@ -61,3 +61,13 @@ Redis and sidekiq are already configured
   - Uncomment out the line `gem redis` in the Gemfile
   - Rebuild the containers for the change in gem file
   - Follow this guide on (Action Cable)[http://edgeguides.rubyonrails.org/action_cable_overview.html]
+
+
+## Capistrano (On Digital Ocean)
+### /config/deploy.rb
+- Add your gihub URL to `set :repo_url`
+- Add your application name to `set :application` (This will be used for folders etc)
+- If your deployment user is not "deploy", change it under `set :user`
+
+### /config/deploy/production.rb
+- Add Digital Ocean Server IP to the first option for the *server*
