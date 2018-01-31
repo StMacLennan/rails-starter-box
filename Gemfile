@@ -9,7 +9,8 @@ end
 
 gem 'rails', '~> 5.1.4'
 gem 'pg', '~> 0.18'
-gem 'puma', '~> 3.7'
+# gem 'puma', '~> 3.7'
+gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
