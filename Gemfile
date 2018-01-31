@@ -50,11 +50,11 @@ end
 
 group :development do
   # Capistrano for deployment
-  gem 'capistrano'
-  gem 'capistrano-bundler', '~> 1.3'
-  gem 'capistrano-rails', '~> 1.3'
-  gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.2'
-  gem 'capistrano3-puma', '~> 3.1', '>= 3.1.0'
+  # gem 'capistrano'
+  # gem 'capistrano-bundler', '~> 1.3'
+  # gem 'capistrano-rails', '~> 1.3'
+  # gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.2'
+  # gem 'capistrano3-puma', '~> 3.1', '>= 3.1.0'
 
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
